@@ -16,5 +16,8 @@ namespace SimpleBlog.FrontEnd.Models
 
         [JsonProperty("image")]
         public string Image { get; set; }
+
+        [JsonProperty("numberOfComments")]
+        public int? NumberOfComments { get; set; }
     }
 }

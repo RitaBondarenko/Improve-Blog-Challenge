@@ -4,7 +4,8 @@ using SimpleBlog.FrontEnd.Models;
 
 namespace SimpleBlog.FrontEnd.ViewModels
 {
-    public class PostsViewModel {
+    public class PostsViewModel
+    {
         public List<Post> Posts { get; set; }
     }
 }

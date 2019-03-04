@@ -19,12 +19,6 @@
             @Model.Post.Body
         </div>
     </div>
-    
-    <div class="row">
-        <div class="col-md-12">
-            @Model.Post.Body
-        </div>
-    </div>
 
     <h2>What people say</h2>
     foreach(var comment in Model.Comments) 
@@ -39,6 +33,8 @@
             </div>
         </div>
     }
-} else {
+}
+else
+{
     <p>Post not found. Sorry.</p>
 }
