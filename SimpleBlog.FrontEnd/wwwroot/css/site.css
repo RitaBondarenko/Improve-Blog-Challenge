@@ -36,6 +36,18 @@ body {
     margin-top: 3%;
 }
 
+.comment {
+    display: flex;
+    width: 80%;
+    color: #333;
+}
+
+.comment:hover,
+.comment:focus {
+    text-decoration: none;
+}
+
+
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
     /* Hide captions */

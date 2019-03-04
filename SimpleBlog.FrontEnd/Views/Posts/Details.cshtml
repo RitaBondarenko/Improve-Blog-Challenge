@@ -31,15 +31,15 @@
     <h2>What people say</h2>
     foreach (var comment in Model.Comments)
     {
-        <div class="row">
-            <div class="col-md-1">
+        <a href="mailto:@comment.Email?subject=Regarding%20your%20comment%20on @comment.Name" class="comment">
+            <div class="comment-image">
                 <img src="@comment.Avatar" alt="@comment.Name" class="img-responsive" />
             </div>
-            <div class="col-md-5">
+            <div class="col-md-10">
                 <h3>@comment.Name</h3>
                 <p>@comment.Body</p>
             </div>
-        </div>
+        </a>
     }
 }
 else
