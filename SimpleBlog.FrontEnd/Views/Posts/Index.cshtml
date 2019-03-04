@@ -5,9 +5,16 @@
 }
 
 <h1>Our Posts</h1>
-@if(Model.Posts != null && Model.Posts.Count() > 0) 
+@if (Model.Posts != null && Model.Posts.Count() > 0)
 {
-    foreach(var post in Model.Posts) 
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">@Html.ActionLink("Home", "Index", "Home")</li>
+            <li class="breadcrumb-item active">Posts</li>
+        </ol>
+    </nav>
+
+    foreach (var post in Model.Posts)
     {
         <div class="row m1emb">
             <a href="@Url.Action("Details", "Posts", new { id = post.Id })">
@@ -21,7 +28,9 @@
             </a>
         </div>
     }
-} else {
+}
+else
+{
     <div class="row">
         <div class="col-md-12">
             <p>There's nothing to see here.. :|</p>

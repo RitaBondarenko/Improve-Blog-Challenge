@@ -5,6 +5,12 @@
     var bgRand = new Random(0);
 }
 
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">Home</li>
+    </ol>
+</nav>
+
 <h1>Featured Posts</h1>
 <div id="postsCarousel" class="carousel slide mb-1" data-ride="carousel" data-interval="6000">
     @if(ViewData["Model.Featured"] != null) 

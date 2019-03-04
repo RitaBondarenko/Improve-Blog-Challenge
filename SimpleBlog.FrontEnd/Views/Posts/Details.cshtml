@@ -4,10 +4,18 @@
     var bgRand = new Random(0);
 }
 
-@if(Model.Post != null) 
+@if (Model.Post != null)
 {
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">@Html.ActionLink("Home", "Index", "Home")</li>
+            <li class="breadcrumb-item">@Html.ActionLink("Posts", "Index", "Posts")</li>
+            <li class="breadcrumb-item active" aria-current="page">@Model.Post.Title</li>
+        </ol>
+    </nav>
+
     <h1>@Model.Post.Title</h1>
-    
+
     <div class="row mb-1">
         <div class="col-md-12">
             <h2><img src="https://via.placeholder.com/1920x600/@bgRand.Next(100000, 1000000)/ffffff?text=@Model.Post.Title" alt="@Model.Post.Title" class="img-responsive" /></h2>
@@ -21,11 +29,11 @@
     </div>
 
     <h2>What people say</h2>
-    foreach(var comment in Model.Comments) 
+    foreach (var comment in Model.Comments)
     {
         <div class="row">
             <div class="col-md-1">
-                <img src="@comment.Avatar" alt="@comment.Name" class="img-responsive" />                
+                <img src="@comment.Avatar" alt="@comment.Name" class="img-responsive" />
             </div>
             <div class="col-md-5">
                 <h3>@comment.Name</h3>
