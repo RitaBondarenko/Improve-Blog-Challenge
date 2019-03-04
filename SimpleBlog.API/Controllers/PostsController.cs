@@ -32,12 +32,5 @@ namespace SimpleBlog.API.Controllers
         {
             return JsonConvert.SerializeObject(await _postsRepo.Get<Post>(id));
         }
-
-
-        //[HttpGet("{urlTitle}")]
-        //public async Task<ActionResult<string>> Get(string urlTitle)
-        //{
-
-        //}
     }
 }
