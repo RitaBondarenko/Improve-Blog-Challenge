@@ -32,12 +32,13 @@ namespace SimpleBlog.FrontEnd.Controllers
             {
                 var comments = await commentsRepo.GetAll<Comment>(post.Id);
                 post.NumberOfComments = comments.Count();
+                post.Slug = GetSlug(post.Title);
             }
 
             return View(vm);
         }
 
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(int id, string slug)
         {
             var post = await postsRepo.Get<Post>(id);
             var comments = await commentsRepo.GetAll<Comment>(id);
@@ -46,9 +47,6 @@ namespace SimpleBlog.FrontEnd.Controllers
                 Post = post,
                 Comments = comments.ToList(),
             };
-
-            var slug = GetSlug(vm.Post.Title);
-            RouteData.Values.Add("slug", slug);
 
             return View(vm);
         }

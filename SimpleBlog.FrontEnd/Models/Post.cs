@@ -19,5 +19,11 @@ namespace SimpleBlog.FrontEnd.Models
 
         [JsonProperty("numberOfComments")]
         public int? NumberOfComments { get; set; }
+
+        [JsonProperty("urlTitle")]
+        public string UrlTitle { get; set; }
+
+        [JsonProperty("slug")]
+        public string Slug { get; set; }
     }
 }

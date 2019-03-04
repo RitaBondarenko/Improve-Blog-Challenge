@@ -23,6 +23,9 @@ namespace SimpleBlog.API.Models
         [JsonProperty("image")]
         public string Image => "https://via.placeholder.com/150x150";
 
+        [JsonProperty("numberOfComments")]
+        public int? NumberOfComments { get; set; }
+
         [JsonProperty("urlTitle")]
         public string UrlTitle { get; set; }
     }

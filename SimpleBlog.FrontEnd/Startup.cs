@@ -59,6 +59,13 @@ namespace SimpleBlog.FrontEnd
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
+                    name: "details",
+                    template: "{controller=Post}/{action=Details}/{slug?}");
+            });
+
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
