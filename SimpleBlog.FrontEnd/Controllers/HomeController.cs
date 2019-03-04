@@ -17,6 +17,7 @@ namespace SimpleBlog.FrontEnd.Controllers
         {
             this.postsRepo = postsRepo;
         }
+
         public async Task<IActionResult> Index()
         {
             var viewModel = await postsRepo.GetN<Post>(6);
