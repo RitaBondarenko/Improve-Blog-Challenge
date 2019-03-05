@@ -11650,9 +11650,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Improve-Blog-Challenge\\SimpleBlog.API\\SimpleBlog.API.csproj",
-      "projectName": "SimpleBlog.API",
-      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Improve-Blog-Challenge\\SimpleBlog.API\\SimpleBlog.API.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Improve-Blog-Challenge\\SimpleBlog.API\\API.csproj",
+      "projectName": "API",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Improve-Blog-Challenge\\SimpleBlog.API\\API.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Improve-Blog-Challenge\\SimpleBlog.API\\obj\\",
       "projectStyle": "PackageReference",

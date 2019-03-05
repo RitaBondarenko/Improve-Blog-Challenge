@@ -11545,9 +11545,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Improve-Blog-Challenge\\SimpleBlog.FrontEnd\\SimpleBlog.FrontEnd.csproj",
-      "projectName": "SimpleBlog.FrontEnd",
-      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Improve-Blog-Challenge\\SimpleBlog.FrontEnd\\SimpleBlog.FrontEnd.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Improve-Blog-Challenge\\SimpleBlog.FrontEnd\\FrontEnd.csproj",
+      "projectName": "FrontEnd",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Improve-Blog-Challenge\\SimpleBlog.FrontEnd\\FrontEnd.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Improve-Blog-Challenge\\SimpleBlog.FrontEnd\\obj\\",
       "projectStyle": "PackageReference",
